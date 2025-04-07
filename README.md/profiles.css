@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: Arial, sans-serif;
+}
+
+/* Principal Section */
+.principal-class {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 100px;
+    flex-wrap: wrap;
+}
+
+.principal {
+    height: 400px;
+    width: 300px;
+    margin: 25px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.principal .itachi {
+    height: 400px;
+    width: 300px;
+    margin-top: 1px;
+    border-radius: 25px;
+    border: 1px solid rgb(111, 108, 108);
+}
+
+.principal span {
+    font-size: 18px;
+}
+
+.principal .img h3 {
+    font-size: 17px;
+}
+
+.principal .img1 {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+/* Profile Section */
+.profile-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 25px;
+    padding: 10px 30px;
+    flex-wrap: wrap;
+}
+
+.profile-field .profiles {
+    width: 320px;
+    height: 380px;
+    margin: 15px;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 15px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+    .text p {
+        padding: 10px 50px;
+    }
+
+    .principal-class {
+        padding: 10px 20px;
+    }
+
+    .profile-field {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text h1 {
+        font-size: 40px;
+    }
+
+    .text p {
+        padding: 10px 20px;
+    }
+
+    .principal-class {
+        flex-direction: column;
+    }
+
+    .principal {
+        width: 80%;
+        margin: 15px auto;
+    }
+
+    .profile-field {
+        flex-direction: column;
+    }
+
+    .profile-field .profiles {
+        width: 80%;
+        margin: 15px auto;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .text h1 {
+        font-size: 30px;
+    }
+
+    .text p {
+        padding: 10px 10px;
+    }
+
+    .principal {
+        width: 90%;
+    }
+
+    .profile-field .profiles {
+        width: 90%;
+    }
+}

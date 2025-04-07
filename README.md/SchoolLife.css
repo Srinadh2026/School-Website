@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+
+
+
+.pclass {
+    text-align: center;
+    margin-top: 20px; /* Reduced from 50px */
+    margin-bottom: 20px; /* Added to control bottom spacing */
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #001f4d;
+}
+
+.div0 {
+    height: 300px;
+    width: 100%;
+    border: 2px solid black;
+    position: relative;
+    margin: 0; /* Ensure no unwanted margin */
+    padding: 0;
+    margin-bottom: 0;
+}
+
+
+/* Image Styling */
+.div0 img {
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.dropdown-container{
+    /* margin-top: 50px;     */
+}
+
+select {
+    background-color: white;
+    color: blueviolet;
+    font-size: large;
+    font-weight: bold;
+    padding-right: 10px;
+    height: 50px;
+    width: 250px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    margin: 5px;
+    border: 2px solid #0A3981;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+select:disabled {
+    background-color: #f0f0f0;
+    color: #888;
+    cursor: not-allowed;
+}
+
+select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(10, 57, 129, 0.5);
+}
+
+/* Responsive adjustments */
+/* @media (max-width: 768px) {
+    body {
+        margin: 50px 20px;
+    }
+    
+    select {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 30px 10px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.1rem;
+    }
+} */
+
+.academiclife, .extracurricularactivities {
+    display: block; /* Default state */
+    transition: opacity 0.3s ease;
+}
+
+.hidden-section {
+    display: none !important;
+}
+
+/* Heading Styling */
+.div0 h1 {
+    margin-top: 150px;
+    font-size: x-large;
+    font-weight: bolder;
+    text-align: center;
+}
+.content {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.studyTips{
+    font-size: 20px;
+}
+
+.studyTipsul{
+    font-size: 18px;
+}
+
+.alternate {
+    background-color: #e3f2fd;
+}
+
+.image-text {
+    display: flex;
+    max-width: 80%;
+    align-items: center;
+    gap: 40px;
+}
+
+.image-text.reverse {
+    flex-direction: row-reverse;
+}
+
+.image-text img {
+    width: 300px;
+    border-radius: 10px;
+    transition: transform 4s ease, opacity 0.3s ease;
+}
+
+.image-text p {
+    /* padding-right: 20px; */
+    text-align: justify;
+}
+
+/* Zoom Effects */
+.zoom-image {
+    transform-origin: center center;
+    will-change: transform;
+}
+
+.zoom-in {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.zoom-out {
+    transform: scale(0.9);
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .image-text {
+        flex-direction: column;
+        max-width: 100%;
+    }
+    
+    .image-text.reverse {
+        flex-direction: column;
+    }
+    
+    .image-text p {
+        padding-right: 0;
+    }
+}

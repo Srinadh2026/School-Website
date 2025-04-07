@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.bus {
+    margin-bottom: 30px;
+}
+
+.bustransport {
+    height: 400px;
+    width: 100%;
+    background-image: url('Images/library.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    opacity: 1;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Add this to position the overlay */
+}
+
+.bustransport::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+    z-index: 2; /* Ensure the overlay is above the background image */
+}
+
+.bustext {
+    position: relative; /* Ensure the text is above the overlay */
+    z-index: 2; /* Higher z-index than the overlay */
+    text-align: center; /* Center the text */
+}
+
+.bustext h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0; /* Remove default margin */
+}
+
+.bus-info {
+    display: flex;
+    padding: 30px 50px;
+}
+
+.bus-info .bus-text {
+    flex-basis: 60%;
+    margin-left: 40px;
+    margin-right: 100px;
+}
+
+.bus-info .bus-photo {
+    flex-basis: 40%;
+    margin-right: 30px;
+}
+
+.bus-info .bus-photo img {
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+}
+
+.bus-info .bus-text h2 {
+    margin-left: 10px;
+    color: rgb(0, 123, 255);
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.bus-info .bus-text p {
+    font-size: 17px;
+    line-height: 35px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller desktops */
+@media (max-width: 1024px) {
+    .bus-info {
+        padding: 30px 30px; /* Reduce padding for smaller screens */
+    }
+
+    .bus-info .bus-text {
+        margin-right: 50px; /* Reduce margin for better spacing */
+    }
+
+    .bus-info .bus-photo img {
+        height: 250px; /* Slightly reduce image height */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .bustext h1 {
+        font-size: 40px; /* Adjust font size for smaller screens */
+    }
+
+    .bus-info {
+        flex-direction: column; /* Stack text and image vertically */
+        padding: 20px 20px;
+    }
+
+    .bus-info .bus-text {
+        margin-left: 0; /* Remove left margin for stacked layout */
+        margin-right: 0;
+        flex-basis: 100%; /* Take full width */
+    }
+
+    .bus-info .bus-photo {
+        flex-basis: 100%; /* Take full width */
+        margin-right: 0;
+        margin-top: 20px; /* Add margin between text and image */
+    }
+
+    .bus-info .bus-photo img {
+        height: 300px; /* Reset image height for mobile */
+        padding: 10px; /* Reduce padding */
+    }
+}
+
+/* For very small mobile devices */
+@media (max-width: 480px) {
+    .bustext h1 {
+        font-size: 30px; /* Further reduce font size for very small screens */
+    }
+
+    .bus-info .bus-text h2 {
+        font-size: 28px; /* Adjust heading size */
+    }
+
+    .bus-info .bus-text p {
+        font-size: 16px; /* Adjust paragraph text size */
+    }
+
+    .bus-info .bus-photo img {
+        height: 250px; /* Reduce image height for very small screens */
+    }
+}

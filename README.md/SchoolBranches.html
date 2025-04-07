@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our School Branches</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="SchoolBranches.css">
+    <link rel="stylesheet" href="school.css">
+</head>
+<body>
+
+    <section class="header">
+        <div class="logo">
+            <a href="school.html">
+                <img src="Images/SchoolLogo-removebg-preview.png" alt="School Logo">
+            </a>
+        </div>
+
+        <button class="menu-toggle">&#9776;</button> 
+
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#" class="aboutus">About Us</a>
+                <ul class="dropdown">
+                    <li><a href="school.html#aboutids" class="home-link1">About IDS</a></li>
+                    <li><a href="school.html#chairman1" class="home-link1" onclick="showSection('chairman1')">Chairman</a></li>
+                    <li><a href="school.html#Director" class="home-link1" onclick="showSection('Director')">Director</a></li>
+                    <li><a href="school.html#principal" class="home-link1" onclick="showSection('principal')">Principal</a></li>
+                </ul>
+            </li>
+                <li><a href="#" class="academics">Academics</a>
+                    <ul class="dropdown">
+                        <!-- <li><a href="#" class="home-link1"></a></li> -->
+                        <li><a href="SchoolLife.html" class="home-link1">School Life</a></li>
+                        <li><a href="profiles.html" class="home-link1">Teachers</a></li>
+                        <li><a href="SchoolBranches.html" class="home-link1">Branches</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" class="facilities">Facilities</a>
+                    <ul class="dropdown">
+                        <li><a href="bustransport.html" class="home-link1">Bus Transport</a></li>
+                        <li><a href="ExtraClasses.html" class="home-link1">Extra Classes</a></li>
+                        <li><a href="computerlab.html" class="home-link1">Computer Labs</a></li>
+                        <li><a href="centrallibrary.html" class="home-link1">Central Library</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="admissions.html" class="admissions">Admissions</a></li>
+                <li><a href="#lead11" class="lead1">Lead</a></li>
+                <li><a href="#" class="gallery">Gallery</a></li>
+                <li><a href="#contact" class="contact">Contact</a></li>
+                <li><button class="register"> <a href="Login.html">LOGIN</a></button></li>
+            </ul>
+        </nav>
+    </section>
+
+    <div class="contener">
+        <div class="group">
+            <p class="text"> Admissions are open for 2025-2026 Academic year </p>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="branchescontainer hero-content">
+            <h1>Our School Branches</h1>
+            <p>Discover excellence in education across our three branches, each dedicated to nurturing talent, fostering innovation, and providing a dynamic learning experience.</p>
+            <a href="#branches" class="btn">Explore Campuses</a>
+        </div>
+    </section>
+
+    <!-- Branches Section -->
+    <section class="branches" id="branches">
+        <div class="branchescontainer">
+            <h2>Our Campuses</h2>
+            <div class="branches-grid">
+                <!-- Branch 1 -->
+                <div class="branch-card">
+                    <div class="branch-img">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Main Campus">
+                    </div>
+                    <div class="branch-content">
+                        <h3>Attili Campus</h3>
+                        <div class="brancheslocation">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <a href="https://maps.app.goo.gl/fo3HACzr6fQPJQHa6" class="branchmap">
+                                <span >Attili-534134 WEST GODVARI, A.P.</span>
+                            </a>
+                            
+                        </div>
+                        <p>The school actively promotes interactive learning through hands-on activities and a strong supportive community.</p>
+                        <div class="branch-features">
+                            <span class="feature">Culturals</span>
+                            <span class="feature">Indoor Games</span>
+                            <span class="feature">Arts Center</span>
+                            <span class="feature">Library</span>
+                        </div>
+                        <a href="school.html" class="branch-btn">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Branch 2 -->
+                <div class="branch-card">
+                    <div class="branch-img">
+                        <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" alt="Westside Campus">
+                    </div>
+                    <div class="branch-content">
+                        <h3>Ganapavaram Campus</h3>
+                        <div class="brancheslocation">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <a href="https://maps.app.goo.gl/EWChwq8Zn3TfurqbA" class="branchmap">
+                                <span >Saripalle-534198 WEST GODVARI, A.P.</span>
+                            </a>
+                        </div>
+                        <p>It offers a well-rounded curriculum, including STEM programs, arts, sports and experienced faculty.</p>
+                        <div class="branch-features">
+                            <span class="feature">STEM Labs</span>
+                            <span class="feature">Play Areas</span>
+                            <span class="feature">Music Room</span>
+                            <span class="feature">Outdoor Classroom</span>
+                        </div>
+                        <a href="school.html" class="branch-btn">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Branch 3 -->
+                <div class="branch-card">
+                    <div class="branch-img">
+                        <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Hillside Campus">
+                    </div>
+                    <div class="branch-content">
+                        <h3>Akividu Campus</h3>
+                        <div class="brancheslocation">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <a href="https://maps.app.goo.gl/EWChwq8Zn3TfurqbA" class="branchmap">
+                                <span >Akividu-534235 WEST GODVARI, A.P.</span>
+                            </a>
+                        </div>
+                        <p>It prepares students for higher education with advanced coursework, language programs, and leadership opportunities.</p>
+                        <div class="branch-features">
+                            <span class="feature">Computer Labs</span>
+                            <span class="feature">Science Labs</span>
+                            <span class="feature">College Counseling</span>
+                            <span class="feature">Athletics</span>
+                        </div>
+                        <a href="school.html" class="branch-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="branchesmap-section">
+        <div class="branchescontainer">
+            <h2>Our Locations</h2>
+            <div class="branchesmap-container">
+                <!-- In a real implementation, you would embed a Google Map or similar here -->
+                <!-- <img src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3823.6896077890497!2d81.4746218!3d16.592124300000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3632572475e943%3A0xfe101e2eaaee2f41!2sIndian%20Digital%20School!5e0!3m2!1sen!2sin!4v1741709085506!5m2!1sen!2sin" > -->
+                <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3823.6896077890497!2d81.4746218!3d16.592124300000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3632572475e943%3A0xfe101e2eaaee2f41!2sIndian%20Digital%20School!5e0!3m2!1sen!2sin!4v1741709085506!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="500" 
+                        style="border:0; border-radius: 8px;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="branchescontact">
+        <div class="branchescontainer">
+            <h2>Contact Our Branches</h2>
+            <div class="branchescontact-grid">
+                <div class="branchescontact-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Attili Campus</h3>
+                    <p><a href="tel:+917013449897" class="branchescontactphone">Phone: +91 9959338838</a></p>
+                    <p><a href="mailto:ids123@gmail.com" class="branchescontactphone">Email: ids123@gmail.com</a></p>
+                </div>
+                <div class="branchescontact-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Ganapavaram Campus</h3>
+                    <p><a href="tel:+917013449897" class="branchescontactphone">Phone: +91 9959338838</a></p>
+                    <p><a href="mailto:ids123@gmail.com" class="branchescontactphone">Email: ids123@gmail.com</a></p>
+                </div>
+                <div class="branchescontact-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Akividu Campus</h3>
+                    <p><a href="tel:+917013449897" class="branchescontactphone">Phone: +91 9959338838</a></p>
+                    <p><a href="mailto:ids123@gmail.com" class="branchescontactphone">Email: ids123@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <!-- About IDS Schools -->
+            <div class="footer-section about">
+                <h3>About IDS Schools</h3>
+                <p>
+                    For the past five years, IDS has been a pillar of education, nurturing talented individuals and fostering excellence.
+                    As a leader in digital learning, IDS has established Lead Digital Learning Special, a platform where students gain
+                    practical knowledge rather than just theoretical concepts.
+                </p>
+                <a href="school.html#lead11" class="read-more-footer">➡ Discover more</a>
+            </div>
+
+            <!-- About Us Links -->
+            <div class="footer-section links">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="school.html#aboutids">About IDS</a></li>
+                    <li><a href="school.html#chairman1">Founder Chairman</a></li>
+                    <li><a href="SchoolLife.html">Vision & Philosophy</a></li>
+                    <li><a href="SchoolLife.html">Why IDS</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="SchoolBranches.html">Campuses</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="school.html">Home</a></li>
+                    <li><a href="#">Alumni</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Downloads</a></li>
+                    <li><a href="#">News & Media</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information & Map -->
+            <div class="footer-section contact">
+                <h3>Central Office Address</h3>
+                <p>Undi Road, Ganapavaram Andhra Pradesh, India.</p>
+                <p>📞 <a href="tel:+919959338838" class="footer-phone">+91 9959338838</a></p>
+                
+                <!-- Social Media Icons -->
+                <div class="social-icons">
+                    <ul class="social-icons">
+                        <li><a href=""><ion-icon name="logo-facebook" class="icon"></ion-icon></a></li>
+                        <li><a href=""><ion-icon name="logo-twitter" class="icon"></ion-icon></a></li>
+                        <li><a href=""><ion-icon name="logo-linkedin" class="icon"></ion-icon></a></li>
+                        <li><a href=""><ion-icon name="logo-instagram" class="icon"></ion-icon></a></li>
+                    </ul>
+                </div>
+
+                <!-- Google Maps Embed -->
+                <div class="gps-location">
+                    <h4>Find Us on Map:</h4>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3823.6896077890497!2d81.4746218!3d16.592124300000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3632572475e943%3A0xfe101e2eaaee2f41!2sIndian%20Digital%20School!5e0!3m2!1sen!2sin!4v1741709085506!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="200" 
+                        style="border:0; border-radius: 8px;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+            <p>Copyrights © 2025 IDS Schools | All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="SchoolBranches.js"></script>
+    <script src="school.js"></script>
+</body>
+</html>

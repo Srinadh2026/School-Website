@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDS - Indian Digital School</title>
+    <link rel="icon" href="Images/SchoolLogo.jpeg" type="Images/SchoolLogo2" />
+    <link rel="stylesheet" href="school.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+</head>
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
+    <section class="header">
+        <div class="logo">
+            <a href="school.html">
+                <img src="Images/SchoolLogo-removebg-preview.png" alt="School Logo">
+            </a>
+        </div>
+
+        <button class="menu-toggle">&#9776;</button> 
+
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#" class="aboutus">About Us</a>
+                <ul class="dropdown">
+                    <li><a href="#aboutids" class="home-link1">About IDS</a></li>
+                    <li><a href="#chairman1" class="home-link1" onclick="showSection('chairman1')">Chairman</a></li>
+                    <li><a href="#Director" class="home-link1" onclick="showSection('Director')">Director</a></li>
+                    <li><a href="#principal" class="home-link1" onclick="showSection('principal')">Principal</a></li>
+                </ul>
+            </li>
+                    <li><a href="#" class="academics">Academics</a>
+                    <ul class="dropdown">
+                        <!-- <li><a href="#" class="home-link1"></a></li> -->
+                        <li><a href="SchoolLife.html" class="home-link1">School Life</a></li>
+                        <li><a href="profiles.html" class="home-link1">Teachers</a></li>
+                        <li><a href="SchoolBranches.html" class="home-link1">Branches</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" class="facilities">Facilities</a>
+                    <ul class="dropdown">
+                        <li><a href="bustransport.html" class="home-link1">Bus Transport</a></li>
+                        <li><a href="ExtraClasses.html" class="home-link1">Extra Classes</a></li>
+                        <li><a href="computerlab.html" class="home-link1">Computer Labs</a></li>
+                        <li><a href="centrallibrary.html" class="home-link1">Central Library</a></li>
+                    </ul>
+                </li>
+                <li><a href="admissions.html" class="admissions">Admissions</a></li>
+                <li><a href="#lead11" class="lead1">Lead</a></li>
+                <li><a href="#" class="gallery">Gallery</a>
+                </li>
+                <li><a href="#contact" class="contact">Contact</a></li>
+                <li><button class="register"> <a href="Login.html">LOGIN</a></button></li>
+            </ul>
+        </nav>
+    </section>
+
+    <div class="contener">
+        <div class="group">
+            <p class="text"> Admissions are open for 2025-2026 Academic year </p>
+        </div>
+    </div>
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide"> <img src="Images/Slider11.jpg" alt=""> </div>
+            <div class="slide"> <img src="Images/Slider22.png" alt=""> </div>
+            <div class="slide"> <img src="Images/Slider33.jpg" alt=""> </div>
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+    <section id="aboutids" class="aboutids">
+        <div class="heading">
+            <h1>About IDS</h1>
+        </div>
+        <div class="container">
+            <div class="about-content">
+                <h2>Welcome to IDS</h2>
+                <p>Welcome to Indian Digital School, where education meets excellence. 
+                    We provide a holistic learning experience that blends academics 
+                    with extracurricular activities. Our dedicated faculty nurtures 
+                    curiosity, creativity, and critical thinking. With modern facilities 
+                    and innovative teaching, we empower students to reach their full potential. 
+                    Join us in shaping the leaders of tomorrow!
+                </p>
+                <!-- <button class="about-button"> Learn More </button> -->
+                <!-- <a href="SchoolBranches.html">Learn More</a> -->
+                <button class="about-button"> <a href="SchoolBranches.html" class="learnButton">Learn More</a> </button>
+            </div>
+            <div class="about-image">
+                <img src="Images/aboutus.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <div class="chairman" id="chairman">
+        <div class="tabs">
+            <!-- Use anchor links for navigation -->
+            <a href="#chairman1" class="tab active" onclick="showSection('chairman1')">CHAIRMAN</a>
+            <a href="#Director" class="tab" onclick="showSection('Director')">DIRECTOR</a>
+            <a href="#principal" class="tab" onclick="showSection('principal')">CORRESPONDENT</a>
+        </div>
+    
+        <!-- Sections with correct IDs -->
+        <div class="content-section" id="chairman1">
+            <div class="content">
+                <div class="image">
+                    <img src="Images/chairman.jpg" alt="Teacher">
+                </div>
+                <div class="chairmantext">
+                    <h3 class="chairmanTextName">Name</h3>
+                    <p>
+                        Welcome to <a href="school.html" class="chairmantextIDS">INDIAN DIGITAL SCHOOLS</a>, where we nurture young minds with knowledge, values, and excellence. 
+                        Our mission is to provide a holistic education that fosters curiosity, creativity, and leadership. 
+                        With dedicated faculty and a dynamic learning environment, we prepare students for a bright future. 
+                        Together, we strive for academic success and personal growth. 
+                        Thank you for being a part of our journey towards excellence.
+                    </p>
+                    <!-- <button class="read-more">READ MORE</button> -->
+                    <a href="school.html#aboutids"><button class="read-more">More about IDS</button></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="content-section hidden" id="Director">
+            <div class="content">
+                <div class="image">
+                    <img src="Images/chairman.jpg" alt="Mission">
+                </div>
+                <div class="chairmantext">
+                    <h3 class="chairmanTextName">Name</h3>
+                    <p>
+                        At <a href="school.html" class="chairmantextIDS">INDIAN DIGITAL SCHOOLS</a>, we are dedicated to shaping young minds through quality education and strong moral values. 
+                        Our goal is to create a nurturing environment where students grow academically, socially, and emotionally. 
+                        With a focus on innovation and excellence, we equip our students with the skills needed for a successful future. 
+                        We believe that education is a partnership, and together, we can inspire lifelong learning. 
+                        Thank you for your trust and support in our journey of excellence.
+                    </p>
+                    <!-- <button class="read-more">READ MORE</button> -->
+                    <a href="school.html#aboutids"><button class="read-more">More about IDS</button></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="content-section hidden" id="principal">
+            <div class="content">
+                <div class="image">
+                    <img src="Images/chairman.jpg" alt="Management">
+                </div>
+                <div class="chairmantext">
+                    <h3 class="chairmanTextName">Name</h3>
+                    <p>
+                        Welcome to <a href="school.html" class="chairmantextIDS">INDIAN DIGITAL SCHOOLS</a>, where education goes beyond textbooks to shape responsible and confident individuals. 
+                        Our mission is to foster academic excellence, creativity, and strong moral values in every student. 
+                        With a dedicated team of educators and a nurturing environment, we inspire young minds to achieve their 
+                        fullest potential. Education is a journey, and together, we strive for excellence, innovation, and 
+                        lifelong learning. Thank you for your trust and support in making <a href="school.html" class="chairmantextIDS">INDIAN DIGITAL SCHOOLS</a> are centers of excellence.
+                    </p>
+                    <!-- <button class="read-more">READ MORE</button> -->
+                    <a href="school.html#aboutids"><button class="read-more">More about IDS</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section class="homelead section" id="lead11">
+        <div class="homelead-main">
+            <div class="homelead-part1">
+                <div class="leadtext">
+                    <h1>LEAD</h1>
+                    <h3>INDIAN  DIGITAL  SCHOOLS  ARE  COLLABORATION  WITH <span>LEAD</span> TO  ENHANCE  OUR  STUDENTS  FUTURE</h3>
+                    <p>LEAD is an innovative education program that enhances learning through digital classes, transforming traditional classrooms into smart, tech-enabled spaces. By integrating interactive digital content, AI-powered assessments, and personalized learning experiences, LEAD helps students grasp complex concepts more effectively. The program provides teachers with advanced tools, training, and real-time analytics to track student progress and tailor instruction accordingly. With a structured curriculum aligned to global standards, LEAD ensures that students receive high-quality education, bridging learning gaps and making education more engaging and accessible. This digital-first approach empowers schools to deliver a holistic and future-ready learning experience.</p>
+                </div>
+                <div class="homelead-img">
+                    <img src="Images/leadlogo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+        
+     <section class="cards">
+        <div class="card-container">
+            <h3 class="adaptive">Adaptive Methods for Deeper Understanding</h3>
+            <!-- Left Arrow in Blank Space -->
+            <div class="swiper-button-prev"></div>
+            
+            <div class="card-wrapper swiper">
+                <ul class="card-list swiper-wrapper">
+                    <!-- Card Items -->
+                    <li class="card-item swiper-slide">
+                        <a href="https://leadschool.in/parents/english-language-and-general-awareness/" class="card-link">
+                            <img src="Images/english.webp" alt="Developer" class="card-image">
+                            <p class="badge">Level based learning program</p>
+                            <h2 class="card-title">ELGA</h2>
+                            <button class="card-btn">Read More</button>
+                        </a>
+                    </li>
+                    
+                    <!-- Repeat card items as needed -->
+                    <li class="card-item swiper-slide">
+                        <a href="https://leadschool.in/parents/mathematics/" class="card-link">
+                            <img src="Images/Mathematics.jpg" alt="Developer" class="card-image">
+                            <p class="badge">Concrete-Pictorial-Abstract System</p>
+                            <h2 class="card-title">Mathematics</h2>
+                            <button class="card-btn">Read More</button>
+                        </a>
+                    </li>
+                    
+                    <li class="card-item swiper-slide">
+                        <a href="https://leadschool.in/parents/science-and-environmental-science-evs/" class="card-link">
+                            <img src="Images/Science1.png" alt="Developer" class="card-image">
+                            <p class="badge">Learning by doing</p>
+                            <h2 class="card-title">Science</h2>
+                            <button class="card-btn">Read More</button>
+                        </a>
+                    </li>
+                    
+                    <li class="card-item swiper-slide">
+                        <a href="https://leadschool.in/parents/excel-in-coding-with-ccs/" class="card-link">
+                            <img src="Images/Coding.webp" alt="Developer" class="card-image">
+                            <p class="badge">Use-think-build approach</p>
+                            <h2 class="card-title">Coding</h2>
+                            <button class="card-btn">Read More</button>
+                        </a>
+                    </li>
+
+                    <li class="card-item swiper-slide">
+                        <a href="https://leadschool.in/parents/sst-social-science/" class="card-link">
+                            <img src="Images/Social_Science.jpg" alt="Developer" class="card-image">
+                            <p class="badge">Visualise-locate-connect</p>
+                            <h2 class="card-title">Social - Science</h2>
+                            <button class="card-btn">Read More</button>
+                        </a>
+                    </li>
+
+                    <li class="card-item swiper-slide">
+                        <a href="https://leadschool.in/parents/sampoorna-hindi/" class="card-link">
+                            <img src="Images/Hindi.webp" alt="Developer" class="card-image">
+                            <p class="badge">Learning by Speaking</p>
+                            <h2 class="card-title">Sampoorna Hindi</h2>
+                            <button class="card-btn">Read More</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Right Arrow in Blank Space -->
+            <div class="swiper-button-next"></div>
+            
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section>
+        <!-- <div style="min-height: 40em;"></div> -->
+    <div class="counters">
+        <p>INDIAN DIGITAL SCHOOLS</p>
+        <div>
+            
+            <div class="counter">
+                <h1><span data-count="2000">0</span>+</h1>
+                <h3>Students</h3>
+            </div>
+            <div class="counter">
+                <h1><span data-count="60">0</span>+</h1>
+                <h3>Employees</h3>
+            </div>
+            <div class="counter">
+                <h1><span data-count="15">0</span>+</h1>
+                <h3>Buses</h3>
+            </div>
+            <div class="counter">
+                <h1><span data-count="3">0</span>+</h1>
+                <h3>Branches</h3>
+            </div>
+        </div>
+    </div>
+
+    <div style="min-height: 20px;"></div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <!-- About IDS Schools -->
+            <div class="footer-section about">
+                <h3>About IDS Schools</h3>
+                <p>
+                    For the past five years, IDS has been a pillar of education, nurturing talented individuals and fostering excellence.
+                    As a leader in digital learning, IDS has established Lead Digital Learning Special, a platform where students gain
+                    practical knowledge rather than just theoretical concepts.
+                </p>
+                <a href="school.html#lead11" class="read-more-footer">➡ Discover more</a>
+            </div>
+
+            <!-- About Us Links -->
+            <div class="footer-section links">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#aboutids">About IDS</a></li>
+                    <li><a href="#chairman1">Founder Chairman</a></li>
+                    <li><a href="SchoolLife.html">Vision & Philosophy</a></li>
+                    <li><a href="SchoolLife.html">Why IDS</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="SchoolBranches.html">Campuses</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="school.html">Home</a></li>
+                    <li><a href="#">Alumni</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Downloads</a></li>
+                    <li><a href="#">News & Media</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information & Map -->
+            <div class="footer-section contact">
+                <h3>Central Office Address</h3>
+                <p>Undi Road, Ganapavaram Andhra Pradesh, India.</p>
+                <p>📞 <a href="tel:+919959338838" class="footer-phone">+91 9959338838</a></p>
+                
+                <!-- Social Media Icons -->
+                <div class="social-icons">
+                    <ul class="social-icons">
+                        <li><a href=""><ion-icon name="logo-facebook" class="icon"></ion-icon></a></li>
+                        <li><a href=""><ion-icon name="logo-twitter" class="icon"></ion-icon></a></li>
+                        <li><a href=""><ion-icon name="logo-linkedin" class="icon"></ion-icon></a></li>
+                        <li><a href=""><ion-icon name="logo-instagram" class="icon"></ion-icon></a></li>
+                    </ul>
+                </div>
+
+                <!-- Google Maps Embed -->
+                <div class="gps-location">
+                    <h4>Find Us on Map:</h4>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3823.6896077890497!2d81.4746218!3d16.592124300000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3632572475e943%3A0xfe101e2eaaee2f41!2sIndian%20Digital%20School!5e0!3m2!1sen!2sin!4v1741709085506!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="200" 
+                        style="border:0; border-radius: 8px;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+            <p>Copyrights © 2025 IDS Schools | All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="school.js"></script>
+    <!-- <script src="homelead.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

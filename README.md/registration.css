@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    /* display: flex; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgb(177, 177, 224), rgb(235, 226, 159));
+}
+
+.container {
+    position: relative;
+    height: 500px; /* Fixed height */
+    max-width: 600px; /* Maximum width for larger screens */
+    width: 90%; /* Adjusted for smaller screens */
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10% auto; /* Centers the container */
+    padding: 20px; /* Added padding for better spacing */
+    margin-top: 200px;
+}
+
+.container .forms {
+    padding: 20px; /* Reduced padding for smaller screens */
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .forms .title {
+    position: relative;
+    font-size: 24px; /* Reduced font size for smaller screens */
+    font-weight: 600;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.forms .title::before {
+    content: '';
+    height: 2px;
+    width: 150px; /* Adjusted width for smaller screens */
+    background-color: #2368d8;
+    position: absolute;
+    bottom: 0;
+    border-radius: 10px;
+    left: 50%; /* Centered the line */
+    transform: translateX(-50%);
+}
+
+.container .forms .login-form {
+    padding-top: 5px;
+}
+
+.login-form .name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-form .name .input-field {
+    margin-right: 35px;
+}
+
+.forms .input-field {
+    position: relative;
+    margin-top: 20px; /* Reduced margin for smaller screens */
+    height: 40px;
+    width: 100%;
+}
+
+.input-field input {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    color: black;
+    font-size: 16px;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) {
+    border-bottom-color: rgb(17, 124, 217);
+}
+
+.input-field i {
+    position: absolute;
+    top: 20%;
+    left: 0px;
+    color: #999;
+    font-size: 25px;
+    transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) ~ i {
+    color: rgb(17, 124, 217);
+}
+
+.input-field i.icon {
+    left: 0;
+}
+
+.hide {
+    right: 0;
+}
+
+.forms .checkbox {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 2px;
+}
+
+.checkbox .checkbox-content {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input {
+    accent-color: rgb(17, 117, 205);
+    margin: 0 8px -2px 4px;
+}
+
+.forms a.text {
+    text-decoration: none;
+    color: #2368d8;
+}
+
+.forms a:hover {
+    text-decoration: underline;
+}
+
+.forms .text {
+    color: #333;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.forms .checkbox-content {
+    margin-top: 20px;
+}
+
+.forms .button {
+    background-color: #2368d8;
+    border-bottom: none;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    margin-top: 30px; /* Reduced margin for smaller screens */
+}
+
+.forms .button input {
+    color: #fff;
+    border: none;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Full width for smaller screens */
+    padding: 10px; /* Added padding for better touch interaction */
+}
+
+.login-signup {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.login-signup span {
+    margin: 0 8px -2px 4px;
+}
+
+.login-signup span a {
+    color: #333;
+}
+
+.login-signup a {
+    color: #2368d8;
+    text-decoration: none;
+}
+
+.login-signup a:hover {
+    color: #2368d8;
+    text-decoration: underline;
+}
+
+.button input:hover {
+    cursor: pointer;
+    background-color: #0a5fe9;
+}
+
+.forms .login-signup {
+    margin-top: 20px; /* Adjusted margin for smaller screens */
+    text-align: center;
+}
+
+.forms .login-signup span a {
+    text-align: center;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjusted width for smaller screens */
+        margin: 5% auto; /* Adjusted margin for smaller screens */
+    }
+
+    .forms .title {
+        font-size: 20px; /* Reduced font size for smaller screens */
+    }
+
+    .forms .title::before {
+        width: 120px; /* Adjusted width for smaller screens */
+    }
+
+    .forms .input-field {
+        margin-top: 15px; /* Reduced margin for smaller screens */
+    }
+
+    .forms .button {
+        margin-top: 20px; /* Reduced margin for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%; /* Adjusted width for very small screens */
+        margin: 2% auto; /* Adjusted margin for very small screens */
+    }
+
+    .forms .title {
+        font-size: 18px; /* Further reduced font size for very small screens */
+    }
+
+    .forms .title::before {
+        width: 100px; /* Further reduced width for very small screens */
+    }
+
+    .forms .input-field {
+        margin-top: 10px; /* Further reduced margin for very small screens */
+    }
+
+    .forms .button {
+        margin-top: 15px; /* Further reduced margin for very small screens */
+    }
+}

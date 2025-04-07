@@ -1,0 +1,147 @@
+.admissions-title {
+    height: 400px;
+    width: 100%;
+    background-image: url("Images/school.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.admissions-title h1 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.admissions-title .addlink{
+    color: #fff;
+    padding: 0 16px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.admissions-title .addlink:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+
+.admission-div {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.process {
+    padding: 15% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+}
+
+.process h1 {
+    font-size: 30px;
+    color: rgb(0, 123, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.process p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 100;
+}
+
+.process .text {
+    margin-right: 50px;
+    flex-basis: 60%;
+    margin-bottom: 100px;
+    text-align: justify;
+}
+
+.process .img {
+    flex-basis: 40%;
+    height: 280px;
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+ul .list {
+    margin-left: 20px;
+    list-style-type: circle;
+    line-height: 20px;
+    position: relative;
+    padding: 3px 0 1px 20px;
+    margin-bottom: 10px;
+}
+
+.process li {
+    font-size: 17px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller desktops */
+@media (max-width: 1024px) {
+    .process {
+        padding: 10% 5%; /* Adjust padding for smaller screens */
+    }
+
+    .process .text {
+        margin-right: 30px; /* Reduce margin for better spacing */
+    }
+
+    .process .img {
+        height: 250px; /* Slightly reduce image size */
+        width: 250px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .admissions-title h1 {
+        font-size: 35px; /* Adjust font size for smaller screens */
+    }
+
+    .process {
+        flex-direction: column; /* Stack text and image vertically */
+        height: auto; /* Allow height to adjust based on content */
+        padding: 10% 5%;
+    }
+
+    .process .text {
+        margin-right: 0; /* Remove margin for stacked layout */
+        margin-bottom: 30px; /* Add margin between text and image */
+        flex-basis: 100%; /* Take full width */
+    }
+
+    .process .img {
+        flex-basis: 100%; /* Take full width */
+        justify-content: center; /* Center the image */
+    }
+}
+
+/* For very small mobile devices */
+@media (max-width: 480px) {
+    .admissions-title h1 {
+        font-size: 28px; /* Further reduce font size for very small screens */
+    }
+
+    .process h1 {
+        font-size: 24px; /* Adjust heading size */
+    }
+
+    .process p {
+        font-size: 16px; /* Adjust paragraph text size */
+    }
+
+    .process li {
+        font-size: 15px; /* Adjust list item text size */
+    }
+}
